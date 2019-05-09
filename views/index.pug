@@ -1,0 +1,35 @@
+extends layout.pug
+
+block content
+	h1 My Library
+	form(action='./books', method='get')
+		fieldset
+			legend Search a book
+			label Name:	
+				input#name(type='search', name='title', value=title)
+			label Author:	
+				input#author(type='search', name='author', value=author)
+			label Genre:	
+				input#genre(type='search', name='genre', value=genre)
+			label Year:	
+				input#year(type='search', name='year', value=year) 
+			input(type='submit', value='Search')
+	p
+		a.button(href='/books/new') Create New Book
+	table
+		thead
+			tr
+				th Title
+				th Author
+				th Genre
+				th Year
+		tbody
+			each book in data
+				tr
+					th
+						a(href=`/books/${book.id}`)= book.title
+					th= book.author
+					th= book.genre
+					th= book.year
+	- for (let i = 0; i < pages; i++)
+			a.button(href=url + 'page=' + i)= i + 1

@@ -1,0 +1,34 @@
+extends layout.pug
+
+block content
+	if newBook
+		h1 New Book
+	else
+		h1 Update Book
+	
+	form(action=`/books/${newBook ? "new" : id}` method="post")
+		if errors
+			h2.error Oooops!
+			ul.error
+				each error in errors
+					li= error.message
+		p
+			label(for="title") Title
+			input(name="title", type="text", id="title", value=title)
+		p
+			label(for="author") Author
+			input(name="author", type="text", id="author", value=author)
+		p
+			label(for="genre") Genre
+			input(name="genre", type="text", id="genre", value=genre)
+		p
+			label(for="year") Year
+			input(name="year", type="text", id="year", value=year)
+		p
+			input(type="submit", value= newBook ? "Create New Book" : "Update Book")
+		p
+			a.button(href="/") Cancel
+	if !newBook
+		form( method="post" action=`/books/${id}/delete` onsubmit="return confirm('Do you really want to delete this book?');")
+			p
+				input(type="submit", value="Delete Book")

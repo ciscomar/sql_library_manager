@@ -1,0 +1,135 @@
+body {
+  padding: 10px 50px 50px;
+  font: 18px "Garamond", serif;
+  background-color: #e4e4e4f1
+}
+
+a {
+  color: #05929c;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.4s;
+  
+}
+
+  a:hover {
+    color: black;
+  }
+
+a.button{
+  color: white;
+  background: #05929c;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 10px 14px 12px;
+  font-size: 14px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 5px;
+  margin-top: 20px;
+}
+
+input[type=submit] {
+  color: white;
+  background: #05929c;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 10px 14px 12px;
+  font-size: 14px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+form a.button, input[type=submit] {
+  margin-left: 140px;
+  transition: 0.4s;
+}
+
+input[type=submit] {
+  margin-left: 20px;
+}
+
+  a.button:hover, input[type=submit]:hover {
+    background-color: #949494;
+  }
+
+p {
+  margin: 20px auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 10px;
+  line-height: 1.3em;
+}
+h1 {
+  text-align: center;
+}
+
+h2 {
+  border-top: 2px solid #e7e7e7;
+  padding-top: 20px;
+}
+
+th {
+  border-bottom: 2px solid rgb(0, 0, 0);
+  text-align: left;
+  padding: 5px 20px 5px 10px;
+}
+
+tr {
+  min-height: 50px;
+}
+
+tr:nth-child(2n) {
+  background: #E7E7E7;
+}
+
+td {
+  padding: 5px 20px 5px 10px;
+}
+
+label {
+  font-weight: bold;
+  min-width: 130px;
+  display: inline-block;
+  transition: 0.4s;
+}
+
+input {
+  padding: 10px;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  border-radius: 2px;
+  border-color:#05929c;
+  border-style: dotted;
+  transition: 0.4s;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+input[type=text] {
+  margin-left: 100px;
+  width: 300px;
+}
+
+.error {
+  color: rgb(119, 10, 10);
+}
+
+fieldset {
+  width: 65%;
+  border-style: dotted;
+  margin-bottom: auto;
+}
+
+table{
+  margin:  100px 0px 30px;
+  border: solid 1px rgb(0, 0, 0);
+  border-collapse: collapse;
+  border-spacing: 0;
+  font: normal 15px Arial, sans-serif;
+}
+

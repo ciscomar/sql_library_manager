@@ -1,0 +1,30 @@
+{
+  "name": "sql_library_manager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "start": "node app.js"
+  },
+
+  "keywords": [
+    "node",
+    "SQL",
+    "SQLite"
+  ],
+  "author": "",
+  "license": "ISC",
+ 
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "pug": "^2.0.3",
+    "sequelize": "^4.41.2",
+    "sequelize-cli": "^5.4.0",
+    "sqlite3": "^4.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
